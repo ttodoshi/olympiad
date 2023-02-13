@@ -15,6 +15,6 @@ public class Main {
 
         studentsClass.seatStudents();
         studentsClass.showClass();
-        FileParser.writeStudentsList(students);
+        FileParser.writeStudentsList(studentsClass.getStudents());
     }
 }

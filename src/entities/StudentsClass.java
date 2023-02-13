@@ -14,6 +14,10 @@ public class StudentsClass {
         fillTheClass();
     }
 
+    public LinkedList<Student> getStudents() {
+        return new LinkedList<>(studentsPlaces.values());
+    }
+
     private void fillTheClass() {
         for (int i = 0; i < students.size(); i++) {
             studentsPlaces.put(i + 1, students.get(i));
