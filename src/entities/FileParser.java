@@ -44,7 +44,7 @@ public class FileParser {
         BufferedWriter writer = new BufferedWriter(new FileWriter("result.csv"));
         writer.write("Место,Имя\n");
         for (int i = 0; i < students.size(); i++) {
-            writer.write(i+1 + "," + students.get(i).getName() + "\n");
+            writer.write(i + 1 + "," + students.get(i).getName() + "\n");
         }
         writer.close();
     }

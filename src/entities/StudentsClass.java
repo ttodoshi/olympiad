@@ -25,6 +25,7 @@ public class StudentsClass {
     }
 
     public void seatStudents() {
+//        seatByConcentrationProblem();
         seatByVision();
         seatByHand();
     }
@@ -34,6 +35,15 @@ public class StudentsClass {
         @Override
         public int compare(Student student1, Student student2) {
             return student2.getVisionRestriction() - student1.getVisionRestriction();
+        }
+    }
+
+
+    private void seatByConcentrationProblem() {
+        for (int i = 1; i < students.size(); i++) {
+            if ((students.get(i).getConcentrationProblem()) && !(students.get(i - 1).getConcentrationProblem())) {
+                Collections.swap(students, i, i - 1);
+            }
         }
     }
 

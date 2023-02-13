@@ -1,9 +1,9 @@
 package entities;
 
-public class Student{
+public class Student {
     private String name;
     private boolean workingHand; // правая - true
-private byte visionRestriction; // нет проблем - 0; "1-3 парты" - 1; "1-2 парты" - 2; "1 парта, средний ряд" - 3;
+    private byte visionRestriction; // нет проблем - 0; "1-3 парты" - 1; "1-2 парты" - 2; "1 парта, средний ряд" - 3;
     private byte height; // низкий - 1; средний - 2; высокий - 3
     private boolean concentrationProblem; // есть - true
 
